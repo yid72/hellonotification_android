@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HelloNotification</string>
+    <string name="label">Please input something:</string>
+    <string name="text_input">Hello</string>
+    <string name="button_notify_me">Notify Me</string>
+    <string name="button_notify_server">Notify Server</string>
+</resources>
