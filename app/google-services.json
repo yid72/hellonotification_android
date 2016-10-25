@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "5390717850",
+    "firebase_url": "https://helloworld-146921.firebaseio.com",
+    "project_id": "helloworld-146921",
+    "storage_bucket": "helloworld-146921.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5390717850:android:848dec44edb1ccb6",
+        "android_client_info": {
+          "package_name": "com.duyidong.example.hellonotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5390717850-cb0qp6an9br7kqk1lvsql38glnm55v64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADwcLTaRlggj-zhy5QhmqlF9xOPtAsH0k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

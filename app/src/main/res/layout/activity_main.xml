@@ -11,13 +11,11 @@
     tools:context="com.duyidong.example.hellonotification.MainActivity">
 
     <TextView
-        android:id="@+id/textView_hello"
-        android:text="@string/label"
+        android:id="@+id/textView_message1"
+        android:text="@string/label1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/editText_hello"
-        android:layout_alignStart="@+id/editText_hello" />
+        android:layout_alignParentTop="true" />
 
     <EditText
         android:id="@+id/editText_hello"
@@ -26,20 +24,30 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_marginBottom="12dp"
-        android:layout_above="@+id/button_notify_server"
-        android:layout_alignLeft="@+id/button_notify_me"
-        android:layout_alignStart="@+id/button_notify_me" />
+        android:layout_below="@+id/textView_message1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
 
     <Button
+        android:id="@+id/button_notify_me"
         android:text="@string/button_notify_me"
         android:onClick="notifyMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:id="@+id/button_notify_me"
+        android:layout_below="@+id/editText_hello"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_below="@+id/textView_message2"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/editText_token" />
 
     <Button
         android:id="@+id/button_notify_server"
@@ -47,7 +55,36 @@
         android:onClick="notifyServer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button_notify_me"
-        android:layout_alignBottom="@+id/button_notify_me"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/editText_token"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_message3"
+        android:layout_alignLeft="@+id/textView_message3"
+        android:layout_alignStart="@+id/textView_message3"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView_server_notification" />
+
+    <TextView
+        android:id="@+id/textView_message2"
+        android:text="The registration token:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/button_notify_me"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView_message3"
+        android:layout_below="@+id/button_notify_server"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

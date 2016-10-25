@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">HelloNotification</string>
-    <string name="label">Please input something:</string>
+    <string name="label1">Please input something:</string>
     <string name="text_input">Hello</string>
     <string name="button_notify_me">Notify Me</string>
+    <string name="label2">The notification from server:</string>
     <string name="button_notify_server">Notify Server</string>
 </resources>
