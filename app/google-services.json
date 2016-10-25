@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "5390717850-22u2foksq428nn9jbcig4lq6laddmrld.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.duyidong.example.hellonotification",
+            "certificate_hash": "A28E75A00C3372BA58E0D03A73C694B478BE2270"
+          }
+        },
+        {
+          "client_id": "5390717850-5q940j22s031p181f1i2acjfop0iluq8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.duyidong.example.hellonotification",
+            "certificate_hash": "4F104B484831CA59B2BB01DFFA33A908EB22A5E3"
+          }
+        },
+        {
           "client_id": "5390717850-cb0qp6an9br7kqk1lvsql38glnm55v64.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +45,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5390717850-cb0qp6an9br7kqk1lvsql38glnm55v64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

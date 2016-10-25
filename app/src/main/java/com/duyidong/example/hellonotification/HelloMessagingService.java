@@ -1,7 +1,6 @@
 package com.duyidong.example.hellonotification;
 
 import android.util.Log;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
@@ -13,16 +12,16 @@ import com.google.firebase.messaging.RemoteMessage;
 
 public class HelloMessagingService extends FirebaseMessagingService {
     class UpdateNotification implements Runnable{
-        private String notfication;
+        private String notification;
 
         public UpdateNotification(String notification) {
-            this.notfication = notfication;
+            this.notification = notification;
         }
 
         @Override
         public void run() {
             TextView textViewNotification = (TextView) MainActivity.getMainActivity().findViewById(R.id.textView_server_notification);
-            textViewNotification.setText(notfication);
+            textViewNotification.setText(notification);
         }
     }
 
@@ -30,6 +29,9 @@ public class HelloMessagingService extends FirebaseMessagingService {
     public void onMessageReceived(RemoteMessage remoteMessage) {
         Log.i("INFO", "From: " + remoteMessage.getFrom());
 
-        MainActivity.getMainActivity().runOnUiThread(new UpdateNotification(remoteMessage.getNotification().toString()));
+        String noti = remoteMessage.getNotification().getBody();
+        String data = remoteMessage.getData().toString();
+        MainActivity.getMainActivity().runOnUiThread(
+                new UpdateNotification("Notification=" + noti + ", data=" + data));
     }
 }

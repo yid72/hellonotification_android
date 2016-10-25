@@ -1,10 +1,8 @@
 package com.duyidong.example.hellonotification;
 
-import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
-import android.provider.ContactsContract;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -52,10 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
         NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         manager.notify(9999, builder.build());
-
-        TokenFileHelper.saveToken("test");
-
-//        EmailUtil.sendEmail("hello", "test");
     }
 
     public void notifyServer(View view) {
